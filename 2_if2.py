@@ -12,18 +12,17 @@
 
 
 def length_line(line1, line2):
-    #if not isinstance(line1, str) and isinstance(line2, str):
-        #return '0'
-    if len(line1) == len(line2):
+    if not isinstance(line1, str) and isinstance(line2, str): #задать вопрос!
+        return '0'
+    elif len(line1) == len(line2):
         return 'ololo'
     elif len(line1) > len(line2):
         return '2'
-    elif len(line1) > len(line2) and 'learn' in line2:
+    elif len(line1) != len(line2) and 'learn' in line2:
         return '3'
-    else:
-        length_line(line1, line2)
 
-#line_1 = input('Введите первую строку - ')
-#line_2 = input('Введите первую строку - ')
 
-length_line(asdfh, asdf)
+
+print(length_line('asf', 'asf'))
+print(length_line('asf', 'le'))
+print(length_line('asf', 'learn'))
